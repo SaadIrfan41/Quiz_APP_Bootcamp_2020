@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import Quizdata from './Component/Quizdata'
 
 const App = () => {
-  const { register, errors, handleSubmit } = useForm({})
+  const { register, handleSubmit } = useForm({})
   const [category, setcategory] = useState('')
   const [show, setshow] = useState(false)
   const [{ data, loading, error }] = useAxios(
